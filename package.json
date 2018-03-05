@@ -1,0 +1,9 @@
+{
+    "name": "eloko-server",
+    "version": "1.0.0",
+    "description": "Server Eloko created with node.js, express.js, mongodb, graphql",
+    "main": "index.js",
+    "repository": "https://github.com/cp3junior/eloko-server",
+    "author": "RAILALA <r3andrew@gmail.com>",
+    "license": "GPL-3.0"
+}
