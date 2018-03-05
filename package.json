@@ -3,7 +3,27 @@
     "version": "1.0.0",
     "description": "Server Eloko created with node.js, express.js, mongodb, graphql",
     "main": "index.js",
+    "scripts": {
+        "dev": "cross-env MODE_ENV=dev nodemon --exec babel-node src/index.js",
+        "prettier": "prettier --single-quote true --tab-width 4 --print-width 80 --trailing-comma all --write 'src/**/*.js'"
+    },
     "repository": "https://github.com/cp3junior/eloko-server",
     "author": "RAILALA <r3andrew@gmail.com>",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cross-env": "^5.1.3",
+        "express": "^4.16.2",
+        "mongoose": "^5.0.8"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.18.2",
+        "eslint-config-equimper": "^2.2.2",
+        "eslint-config-prettier": "^2.9.0",
+        "nodemon": "^1.17.1",
+        "prettier": "^1.11.1"
+    }
 }
