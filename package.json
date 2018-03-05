@@ -4,16 +4,21 @@
     "description": "Server Eloko created with node.js, express.js, mongodb, graphql",
     "main": "index.js",
     "scripts": {
-        "dev": "cross-env MODE_ENV=dev nodemon --exec babel-node src/index.js",
+        "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
         "prettier": "prettier --single-quote true --tab-width 4 --print-width 80 --trailing-comma all --write 'src/**/*.js'"
     },
     "repository": "https://github.com/cp3junior/eloko-server",
     "author": "RAILALA <r3andrew@gmail.com>",
     "license": "GPL-3.0",
     "dependencies": {
+        "apollo-server-express": "^1.3.2",
+        "babel-plugin-transform-inline-environment-variables": "^0.3.0",
         "body-parser": "^1.18.2",
         "cross-env": "^5.1.3",
         "express": "^4.16.2",
+        "faker": "^4.1.0",
+        "graphql": "0.12.0",
+        "graphql-tools": "^2.21.0",
         "mongoose": "^5.0.8"
     },
     "devDependencies": {
