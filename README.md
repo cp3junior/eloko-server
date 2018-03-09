@@ -6,10 +6,9 @@ Eloko Server created with node.js, express.js, mongodb, graphql
 - MongoDB
 
 # Installation
-- Download the codes into your computer
-- Extract the .zip file
-- cd into the new folder
-- run command ```yarn add``` to download the dependencies
+- Clone the project into a new folder by runing this command ```git clone https://github.com/cp3junior/eloko-server.git foldername```
+- cd into the new folder you created with this command ```cd foldername```
+- run command ```yarn``` to install all the dependencies
 - run the command ```yarn dev``` to lauch the app in dev mode
 - access http://localhost:3000/graphiql from your web browser to interact with GraphQL
 

@@ -4,7 +4,7 @@ import constants from '../config/constants';
 import User from '../models/Users';
 
 export async function requireAuth(user) {
-    if (!user || !user._id) {
+    if (!user || !user._id || user == null) {
         throw new Error('Unauthorized user, must be logged in');
     }
 
@@ -18,6 +18,9 @@ export async function requireAuth(user) {
 }
 
 export function decodeToken(token) {
+    if(token==null){
+        throw new Error('Token not valid');
+    }
     const arr = token.split(' ');
     if (arr[0] === 'Bearer') {
         return jwt.verify(arr[1], constants.JWT_SECRET);
